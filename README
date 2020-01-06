@@ -1,0 +1,8 @@
+nix package for fcitx-label-latex https://github.com/amblafont/fcitx-table-latex
+
+Adapted from the nix package fcitx-table-other
+
+To test if it builds:
+nix-shell -E 'with import <nixpkgs> {}; callPackage /path/to/default.nix { commithash = "<some commit hash>" ;}' 
+
+or -p instead of -E to enter the shell before the build.
